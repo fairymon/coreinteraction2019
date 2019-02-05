@@ -10,6 +10,31 @@
 
 <style>
 
+#intro_text {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #849974; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0;
+  height: 10%; }
+  to { width: 70%;
+  height: 20%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #849974; }
+}
+
 
   body{
     background-color: #feecec;

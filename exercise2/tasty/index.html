@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>tasty wine pairings</title>
+
 <style>
 
+body{
+  background-color: rgb(246,170,108);
+}
   .dot{
-    width: 50px;
-    height: 50px;
-    border-radius:50px;
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
     float:left;
     display: inline-block;
+    margin: 100px;
   }
-
 
 
   .one {
@@ -34,26 +38,254 @@
   .five {
   background-color: #da1e31;
   }
+
   .six {
   background-color: #4c1615;
   }
 
+  .container {
+    position: relative;
+
+  }
+
+  .dot {
+    display: block;
+    z-index: 1;
+
+  }
+
+img{
+  width: 200px;
+  height: 200px;
+  padding-top: 100px;
+
+}
+
+  .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fcf6b2;
+    float:left;
+    display: inline-block;
+
+    width: 200px;
+    height: 200px;
+    border-radius:200px;
+
+    float:left;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+      animation: runSkew 20s infinite;
+  }
+
+.overlay2 {
+  background-color: #ffcd26;
+}
+
+.overlay3 {
+  background-color: #faa21c;
+}
+
+.overlay4 {
+  background-color: #f9c2d0;
+}
+
+.overlay5 {
+  background-color: #da1e31;
+}
+
+.overlay6 {
+  background-color: #4c1615;
+}
+
+
+  .container:hover .overlay {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay2 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay3 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay4 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay5 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay6 {
+    opacity: 0.9;
+  }
+
+.text{
+
+font-family: Futura, sans-serif;
+padding-bottom: 10px;
+font-size: 20px;
+color: #4c1615;
+text-align: center;
+padding-top:70px;
+z-index: 4;
+}
+
+#head {
+  color: #4c1615;
+  font-family: Futura, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+
+.marquee{
+  font-family: Futura, sans-serif;
+  font-size: 100px;
+
+  overflow: hidden;
+  position: relative;
+}
+
+
+.intext{
+  font-family: Futura, sans-serif;
+  font-size: 14px;
+
+}
+
+@keyframes runSkew{
+  0%,100%{
+    transform:skew(0deg) scale(1);
+  }
+  10%,30%,50%,70%,90%{
+   transform:skew(5deg) scale(.9);
+  }
+  20%,40%,60%,80%{
+   transform:skew(-10deg) scale(1.1);
+  }
+}
 
   </style>
-
 </head>
 
 <body>
 
-  <div class="dot one"> </div>
-  <div class="dot two"> </div>
-  <div class="dot three"> </div>
-  <div class="dot four"> </div>
-  <div class="dot five"> </div>
+<h1 id="head">
+Choose the color that looks tasty!
+</h1>
 
 
+  <div class="container">
+<div class="dot one">
+  <div class="overlay">
+    <div class="text"> Champagne
+<p class="intext"> fruity & acid
+& dry & light
+</p>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<div class="container">
+
+  <div class="dot two">
+    <div class="overlay2">
+      <div class="text"> Riesling
+        <p class="intext"> fruity & acid & sweet & light</p>
+      </div>
+
+    </div>
+   </div>
+
+</div>
 
 
+<div class="container">
 
+  <div class="dot three">
+    <div class="overlay3">
+      <div class="text"> Sauvignon Blanc </div>
+        <p class="intext"> very fruity & acid <br> dry & mid-body</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="dot four">
+    <div class="overlay4">
+      <div class="text"> Moscatto </div>
+        <p class="intext"> fruity & light & sweet & mid-dry</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="dot five">
+  <div class="overlay5">
+    <div class="text"> Rose </div>
+        <p class="intext"> fruity & acid & dry & light</p>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="dot six">
+  <div class="overlay6">
+    <div class="text"> Carabet Sauvignon </div>
+        <p class="intext"> fruity & bold & sweet & mid-dry</p>
+  </div>
+</div>
+</div>
+
+<marquee class="marquee" style=" position:absolute; left:600px; top:0px; color:rgb(204,231,227); height:1000px;
+"scrollamount="6" direction="up"
+>Splendid</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:150px; top:0px; color:rgb(234,78,120); font-size:80px; height:1000px;
+"scrollamount="9" direction="up"
+>Sweet</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:500px; top:0px; color:rgb(239,243,250); height:1500px;
+"scrollamount="8" direction="up"
+>Fresh</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:500px; top:200px; color:rgb(204,231,227); width:900px;color:rgb(234,78,120); font-size: 50px;
+"scrollamount="8" direction="left"
+>Heavy</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:1000px; top:0px; color:rgb(234,78,120); height:1000px; color:rgb(239,243,250); font-size: 40px;
+"scrollamount="9" direction="up"
+>Fruity</marquee>
+
+
+<marquee class="marquee" style=" position:absolute; left:600px; top:500px; color:rgb(239,243,250); height:1000px; color:rgb(239,243,250); font-size: 30px;
+"scrollamount="6" direction="left"
+>Flavorful</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:600px; top:600px; color:rgb(239,243,250); width:900px; color:rgb(239,243,250); font-size: 50px;
+"scrollamount="9" direction="left"
+>juicy</marquee>
+
+<marquee class="marquee" style=" position:absolute; left:800px; top:120px; color:rgb(234,78,120); width:800px; color:rgb(239,243,250); font-size: 30px;
+"scrollamount="7" direction="left"
+>savory</marquee>
+  <!-- <div>
+    <span>Splendid</span>
+  </div>
+</marquee> -->
 
   </body>

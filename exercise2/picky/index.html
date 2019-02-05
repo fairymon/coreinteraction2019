@@ -5,16 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>tasty wine pairings</title>
+
 <style>
 
   .dot{
-    width: 50px;
-    height: 50px;
-    border-radius:50px;
+    width: 250px;
+    height: 250px;
+    border-radius:250px;
     float:left;
     display: inline-block;
+    margin: 100px;
   }
-
 
 
   .one {
@@ -34,44 +35,177 @@
   .five {
   background-color: #da1e31;
   }
+
   .six {
   background-color: #4c1615;
   }
 
+  .container {
+    position: relative;
+
+  }
+
+  .dot {
+    display: block;
+    z-index: 1;
+  }
+
+img{
+  width: 600px;
+  height: 600px;
+  padding-top: 160px;
+}
+
+  .overlay, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6 {
+
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fcf6b2;
+    float:left;
+    display: inline-block;
+
+    width: 1000px;
+    height: 1000px;
+    border-radius: 1000px;
+
+    float:left;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+  }
+
+.overlay2 {
+  background-color: #ffcd26;
+}
+
+.overlay3 {
+  background-color: #faa21c;
+}
+
+.overlay4 {
+  background-color: #f9c2d0;
+}
+
+.overlay5 {
+  background-color: #da1e31;
+}
+
+.overlay6 {
+  background-color: #4c1615;
+}
+
+
+  .container:hover .overlay {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay2 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay3 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay4 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay5 {
+    opacity: 0.9;
+  }
+
+  .container:hover .overlay6 {
+    opacity: 0.9;
+  }
+
+.text{
+
+font-family: Futura, sans-serif;
+padding-bottom: 10px;
+font-size: 30px;
+color: #4c1615;
+text-align: left;
+
+}
+#head {
+  color: #4c1615;
+  font-family: Futura, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
 
   </style>
-
 </head>
 
 <body>
 
-
-  <a href="www.google.com">
-<div class="dot one"></div>
-  </a>
-
-  <a href="www.google.com">
-  <div class="dot two"> </div>
-  </a>
-
-    <a href="www.google.com">
-  <div class="dot three"> </div>
-  </a>
-
-  <a href="www.google.com">
-  <div class="dot four"> </div>
-  </a>
-
-  <a href="www.google.com">
-  <div class="dot five"> </div>
-</a>
-
-  <a href="www.google.com">
-    <div class="dot six"> </div>
-  </a>
+<h1 id="head">
+Choose the color that looks tasty!
+</h1>
 
 
+  <div class="container">
+<div class="dot one">
+  <div class="overlay">
+    <div class="text"> Champagne </div>
+    <img src="images/w16.png">
+  </div>
+</div>
+
+</div>
+
+<div class="container">
+
+  <div class="dot two">
+    <div class="overlay2">
+      <div class="text"> Riesling </div>
+      <img src="images/w4.png">
+    </div>
+   </div>
+
+</div>
 
 
+<div class="container">
+
+  <div class="dot three">
+    <div class="overlay3">
+      <div class="text"> Sauvignon Blanc </div>
+      <img src="images/w6.png">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="dot four">
+    <div class="overlay4">
+      <div class="text"> Moscatto </div>
+      <img src="images/w8.png">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+<div class="dot five">
+  <div class="overlay5">
+    <div class="text"> Rose </div>
+    <img src="images/w10.png">
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="dot six">
+  <div class="overlay6">
+    <div class="text"> Carabet Sauvignon </div>
+    <img src="images/w20.png">
+  </div>
+</div>
+</div>
 
   </body>
