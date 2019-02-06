@@ -1,0 +1,185 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Border Css Property</title>
+</head>
+
+
+<body>
+  <h1 color="purple"> Border Css Property</h1>
+  <h2 class="title">The border CSS property sets an element's border. It's a shorthand for border-width, border-style, and border-color.</h2>
+
+
+<style>
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.Name{border-color: red;}
+p.Hex {border-color: #f34293;}
+p.RGB {border-color: rgb(30, 30, 180);}
+
+p.short {border: 5px solid red;}
+
+body{
+  background-color: #E6E6FA;
+}
+
+
+.style, .width, .color, .outlines, .Shortkey {
+  width:500px;
+  text-align: left;
+  padding-left:120px;
+  display:block;
+  padding-top: 10px;
+}
+  .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0;
+    display:block;
+    padding-top: 40px;
+    color:purple;
+  }
+
+img{
+  width: 800px;
+  display:block;
+  margin-right: 500px;
+}
+  div.ex1 {
+  margin: 20px;
+  border: 1px solid black;
+  background-color: yellow;
+  outline: 4px solid red;
+  outline-offset: 15px;
+}
+
+div.ex2 {
+  margin: 10px;
+  border: 1px solid black;
+  background-color: yellow;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+}
+}
+
+
+
+</style>
+
+<ul>
+  <li> <p class="title">Border Style</p>
+<br>
+<div class="style">
+<p class="dotted">{border-style: dotted;}</p>
+<p class="dashed">{border-style: dashed;}</p>
+<p class="solid">{border-style: solid;}</p>
+<p class="double">{border-style: double;}</p>
+<p class="groove">{border-style: groove;}.</p>
+<p class="ridge">{border-style: ridge;}</p>
+<p class="inset">{border-style: inset;}</p>
+<p class="outset">{border-style: outset;}</p>
+<p class="none"> {border-style: none;} </p>
+<p class="hidden"> {border-style: hidden; </p>
+<p class="mix">{border-style: mix;}</p>
+</div>
+  </li>
+
+  <li> <p class="title">Border Width</p>
+    <div class="width">
+  <p>  <b>The border-width property specifies the width of the four borders.</b>
+    <br>
+<br> ex. Border-Width: top right bottom left;
+<br> ex. Border-Width: top & bottom left right;
+<br> ex. Border-Width: top & bottom left & right;
+  </p>
+  <p> <b> The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</b> </p>
+
+  <p ><b>“Ems” (em)</b></p>: The “em” is a scalable unit that is used in web document media. An em is equal to the current font-size, for instance, if the font-size of the document is 12pt, 1em is equal to 12pt. Ems are scalable in nature, so 2em would equal 24pt, .5em would equal 6pt, etc. Ems are becoming increasingly popular in web documents due to scalability and their mobile-device-friendly nature.</p>
+
+  <p><b>Pixels (px)</b></p>: Pixels are fixed-size units that are used in screen media (i.e. to be read on the computer screen). One pixel is equal to one dot on the computer screen (the smallest division of your screen’s resolution). Many web designers use pixel units in web documents in order to produce a pixel-perfect representation of their site as it is rendered in the browser. One problem with the pixel unit is that it does not scale upward for visually-impaired readers or downward to fit mobile devices. </p>
+
+  <p><b>Points (pt)</b></p>: Points are traditionally used in print media (anything that is to be printed on paper, etc.). One point is equal to 1/72 of an inch. Points are much like pixels, in that they are fixed-size units and cannot scale in size.</p>
+
+  <p><b>Percent (%)</b></p>: The percent unit is much like the “em” unit, save for a few fundamental differences. First and foremost, the current font-size is equal to 100% (i.e. 12pt = 100%). While using the percent unit, your text remains fully scalable for mobile devices and for accessibility.
+  </p>
+
+  <p class="dotted">{border-style: dotted;}</p>
+  <p class="dashed">{border-style: dashed;}</p>
+  <p class="solid">{border-style: solid;}</p>
+  <p class="double">{border-style: double;}</p>
+
+
+
+  <img src="width.png">
+
+</div>
+  </li>
+
+<br>
+
+
+<li> <p class="title">Border Color</p>
+  <div class="color">
+<p> The border-color property is used to set the color of the four borders.</p>
+<br>
+The color can be set by:
+<li class="color">Name - specify a color name, like "red"</li>
+<li class="color">Hex - specify a hex value, like "#ffffff"</li>
+<li class="color">RGB - specify a RGB value, like "rgb(255,0,0)"
+transparent</li>
+
+  <div class="color">
+<p class="solid Name">{border-color: red;}</p>
+<p class="solid Hex">{border-color: #f34293;}</p>
+<p class="solid RGB">{border-color: rgb(30, 30, 180);}</p>
+
+</div>
+
+</div>
+</li>
+
+<li>
+<p class="title">Borders ≠  Outlines</p>
+  <div class="outlines">
+  <p>Borders and outlines are very similar. However, outlines differ from borders in the following ways:
+  Outlines never take up space, as they are drawn outside of an element's content.
+
+  <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
+  <br>
+
+  <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
+</p>
+</li>
+
+<li>
+<p class="title">Shortkey</p>
+  <div class="Shortkey">
+    <p> {border : width style color;} </p>
+    <p class="short"> {border: 5px solid red;} </p>
+
+
+</p>
+</li>
+
+
+</ul>
+</body>
+
+
+
+
+</html>
