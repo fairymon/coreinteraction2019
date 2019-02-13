@@ -4,224 +4,159 @@
 <head>
 
   <link href="style.css" type="text/css" rel="stylesheet">
-    <title> Border Css Property</title>
+    <title> </title>
+
+<style>
+
+.container {
+  display: inline-flex;
+  flex-direction: column-reverse ;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  padding-top: 0;
+    position: relative;
+
+
+
+
+}
+body {
+cursor: url('images/car.png'), default;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction:column-reverse ;
+  flex-wrap:nowrap;
+  justify-content: flex-start;
+  margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  width: 50px;
+}
+
+.item {
+  align-self: flex-start;
+    position: relative;
+}
+
+p.item{
+  width: 130px;
+}
+p{
+  width: 300px;
+  padding-left: 10px;
+  color: green;
+}
+
+.topnav a {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+
+
+  display: inline-block;
+}
+
+#space{
+  margin: 0;
+  padding:0;
+  height: 1200px;
+}
+
+</style>
+
+
+
 </head>
 
 
 <body>
-  <h1 color="purple"> Border Css Property</h1>
-  <h2 class="title">The border CSS property sets an element's border. It's a shorthand for border-width, border-style, and border-color.</h2>
-
-
-<style>
-
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.none {border-style: none;}
-p.hidden {border-style: hidden;}
-p.mix {border-style: dotted dashed solid double;}
-
-p.Name{border-color: red;}
-p.Hex {border-color: #f34293;}
-p.RGB {border-color: rgb(30, 30, 180);}
-
-p.short {border: 5px solid red;}
-
-body{
-  background-color: #E6E6FA;
-}
-
-.img {
-  width:400px;
-  padding-left: 300px;
-  margin-left: 0;
-}
-
-.style, .width, .color, .outlines, .Shortkey {
-  width:500px;
-  text-align: left;
-  padding-left:120px;
-  display:block;
-  padding-top: 10px;
-}
-  .title{
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 0;
-    display:block;
-    padding-top: 40px;
-    color:purple;
-  }
-
-img{
-  width: 800px;
-  display:block;
-  margin-right: 500px;
-}
-  div.ex1 {
-  margin: 20px;
-  border: 1px solid black;
-  background-color: yellow;
-  outline: 4px solid red;
-  outline-offset: 15px;
-}
-
-div.ex2 {
-  margin: 10px;
-  border: 1px solid black;
-  background-color: yellow;
-  outline: 5px dashed blue;
-  outline-offset: 5px;
-}
-}
 
 
 
-</style>
 
-<ul>
-  <li> <p class="title">Border Style</p>
-<br>
-<div class="style">
-<p class="dotted">{border-style: dotted;}</p>
-<p class="dashed">{border-style: dashed;}</p>
-<p class="solid">{border-style: solid;}</p>
-<p class="double">{border-style: double;}</p>
-<p class="groove">{border-style: groove;}.</p>
-<p class="ridge">{border-style: ridge;}</p>
-<p class="inset">{border-style: inset;}</p>
-<p class="outset">{border-style: outset;}</p>
-<p class="none"> {border-style: none;} </p>
-<p class="hidden"> {border-style: hidden; </p>
-<p class="mix">{border-style: mix;}</p>
-</div>
-  </li>
 
-  <li> <p class="title">Border Width</p>
-    <div class="width">
-  <p>  <b>The border-width property specifies the width of the four borders.</b>
-    <br>
-<br> ex. Border-Width: top right bottom left;
-<br> ex. Border-Width: top & bottom left right;
-<br> ex. Border-Width: top & bottom left & right;
+
+  <div class="container">
+    <img src="images/21.jpg" class="item"></img>
+    <p class="item" a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99"> 1906 Buick Model F - 2 cylinder - 22 H.P
+ </p>
+ <p id="space"></p>
+
+ <div class="topnav">
+     <a class="active" href="#home">Home</a>
+     <br>
+     <a href="#news">Grid2</a>
+     <br>
+     <a href="#contact">Grid3</a>
+     <br>
+     <a href="https://digitalcollections.nypl.org/">NYPL</a>
+   </div>
+  </div>
+
+  <div class="container">
+    <img src="images/19.jpg" class="item"></img>
+    <img src="images/20.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47db-b7c8-a3d9-e040-e00a18064a99"> Cadillac. 1909 Cadillac Touring Model '30'.
+ </p>
+  </div>
+
+    <div class="container">
+      <img src="images/16.jpg" class="item"></img>
+      <img src="images/17.jpg" class="item"></img>
+      <img src="images/18.jpg" class="item"></img>
+      <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e4-28cb-a3d9-e040-e00a18064a99">  Auburn
+    </p>
+    </div>
+
+
+  <div class="container">
+    <img src="images/12.jpg" class="item"></img>
+    <img src="images/13.jpg" class="item"></img>
+    <img src="images/14.jpg" class="item"></img>
+    <img src="images/15.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e4-28f4-a3d9-e040-e00a18064a99">Bantam.Collection of automobile photographs and news releases, 1877-1938
   </p>
-  <p> <b> The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.</b> </p>
+  </div>
 
-  <p ><b>“Ems” (em)</b></p>: The “em” is a scalable unit that is used in web document media. An em is equal to the current font-size, for instance, if the font-size of the document is 12pt, 1em is equal to 12pt. Ems are scalable in nature, so 2em would equal 24pt, .5em would equal 6pt, etc. Ems are becoming increasingly popular in web documents due to scalability and their mobile-device-friendly nature.</p>
-
-  <p><b>Pixels (px)</b></p>: Pixels are fixed-size units that are used in screen media (i.e. to be read on the computer screen). One pixel is equal to one dot on the computer screen (the smallest division of your screen’s resolution). Many web designers use pixel units in web documents in order to produce a pixel-perfect representation of their site as it is rendered in the browser. One problem with the pixel unit is that it does not scale upward for visually-impaired readers or downward to fit mobile devices. </p>
-
-  <p><b>Points (pt)</b></p>: Points are traditionally used in print media (anything that is to be printed on paper, etc.). One point is equal to 1/72 of an inch. Points are much like pixels, in that they are fixed-size units and cannot scale in size.</p>
-
-  <p><b>Percent (%)</b></p>: The percent unit is much like the “em” unit, save for a few fundamental differences. First and foremost, the current font-size is equal to 100% (i.e. 12pt = 100%). While using the percent unit, your text remains fully scalable for mobile devices and for accessibility.
-  </p>
-
-  <p class="dotted">{border-style: dotted;}</p>
-  <p class="dashed">{border-style: dashed;}</p>
-  <p class="solid">{border-style: solid;}</p>
-  <p class="double">{border-style: double;}</p>
+    <div class="container">
+      <img src="images/7.jpg" class="item"></img>
+      <img src="images/8.jpg" class="item"></img>
+      <img src="images/9.jpg" class="item"></img>
+      <img src="images/10.jpg" class="item"></img>
+      <img src="images/11.jpg" class="item"></img>
+      <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99">Ford phaeton.Collection of automobile photographs and news releases, 1877-1938.
+    </p>
+    </div>
 
 
-
-  <img src="width.png">
-
-</div>
-  </li>
-
-<br>
-
-
-<li> <p class="title">Border Color</p>
-  <div class="color">
-<p> The border-color property is used to set the color of the four borders.</p>
-<br>
-The color can be set by:
-<li class="color">Name - specify a color name, like "red"</li>
-<li class="color">Hex - specify a hex value, like "#ffffff"</li>
-<li class="color">RGB - specify a RGB value, like "rgb(255,0,0)"
-transparent</li>
-
-  <div class="color">
-<p class="solid Name">{border-color: red;}</p>
-<p class="solid Hex">{border-color: #f34293;}</p>
-<p class="solid RGB">{border-color: rgb(30, 30, 180);}</p>
-
-</div>
-
-</div>
-</li>
-
-<li>
-<p class="title">Borders ≠  Outlines</p>
-  <div class="outlines">
-  <p>Borders and outlines are very similar. However, outlines differ from borders in the following ways:
-  Outlines never take up space, as they are drawn outside of an element's content.
-
-  <div class="ex1">This div has a 4 pixels solid red outline 15 pixels outside the border edge.</div>
-  <br>
-
-  <div class="ex2">This div has a 5 pixels dashed blue outline 5 pixels outside the border edge.</div>
-</p>
-</li>
-
-<li>
-<p class="title">Shortkey</p>
-  <div class="Shortkey">
-    <p> {border : width style color;} </p>
-    <p class="short"> {border: 5px solid red;} </p>
-
-
-</p>
-</li>
-
-<li>
-  <p class="title">examples</p>
-    <div class="ex">
-      <img class="img" src="ex1.png">
-        <img class="img" src="ex2.png">
-        <a href="https://css-tricks.com/almanac/properties/b/border/">example1</a>
-</li>
-
-
-
-
-
-<li>
-  <p class="title">examples</p>
-    <div class="ex">
-      <img class="img" src="ex3.png">
-        <img class="img" src="ex4.png">
-        <a href="https://www.csswinner.com/category/Art-Artistic/31">example2</a>
-</li>
-
-<li>
-  <p class="title">examples</p>
-    <div class="ex">
-      <img class="img" src="e5.png">
-        <img class="img" src="e6.png">
-        <a href="http://coreinteraction2019.com/lab/exercise1/index.html">example3</a>
-</li>
-
-
-<li>
-  <p class="title">examples</p>
-    <div class="ex">
-      <img class="img" src="e7.png">
-        <img class="img" src="e8.png">
-        <a href="https://www.newschool.edu/parsons/">example4</a>
-</li>
-
-</ul>
-
-
-
-
+  <div class="container">
+    <img src="images/1.jpg" class="item"></img>
+    <img src="images/2.jpg" class="item"></img>
+    <img src="images/3.jpg" class="item"></img>
+    <img src="images/4.jpg" class="item"></img>
+    <img src="images/5.jpg" class="item"></img>
+    <img src="images/6.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e3-3be7-a3d9-e040-e00a18064a99"> 1938 Chevrolet master deluxe town sedan.
+ </p>
+  </div>
 </body>
 
 
