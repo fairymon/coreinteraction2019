@@ -2,11 +2,187 @@
 
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" type="text/css" rel="stylesheet">
     <title> Border Css Property</title>
 
 <style>
+@media (max-width:500px) {
+  .grid-container {
+    margin-top: 0;
+    padding-top: 5%;
+    padding-left:20%;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(13,1fr);
+    grid-template-areas:
+    'box1 '
+    ' box2'
+    'box3 '
+    'box4'
+    'box5 '
+    'box6'
+    'box7'
+    'box8'
+    'box9'
+    'box10'
+    'box11'
+    'box12'
+    'box13'  ;
+    grid-gap: 0px;
+  }
+
+  .topnav  {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    text-align: left;
+    padding: 3%;
+    text-decoration: none;
+    width: 80%;
+    list-style: none;
+     margin: 0;
+     background-color: red;
+
+  }
+
+  .topnav a {
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+  }
+  #info p{
+    padding-bottom: 0;
+    margin-left:20%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 16px;
+    padding-top: 5%;
+    border-top: 1px solid gray;
+
+  }
+  .wrapper{
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media (min-width:500px) and (max-width: 700px){
+    .grid-container {
+      margin-top: 0;
+      padding-top: 5%;
+      padding-left: 5%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(13,1fr);
+      grid-template-areas:
+      'box1 .'
+      '. box2'
+      'box3 .'
+      '. box4'
+      'box5 .'
+      '. box6'
+      'box7 .'
+      '. box8'
+      'box9 .'
+      '. box10'
+      'box11 .'
+      '. box12'
+      'box13 .'  ;
+      grid-gap: 0px;
+    }
+
+    .topnav {
+      background-color: black;
+      overflow: hidden;
+      flex-direction: column;
+    }
+
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: white;
+      color: black;
+    }
+
+    #info p{
+      padding-bottom: 0;
+
+      padding-left: 5%;
+      text-align: left;
+      font-size: 12px;
+      padding-top: 5%;
+    }
+
+
+
+.item-a{
+grid-area: box1;
+}
+.item-b{
+grid-area: box2;
+}
+.item-c{
+grid-area: box3;
+}
+.item-d{
+grid-area: box4;
+}
+.item-e{
+grid-area: box5;
+}
+.item-f{
+grid-area: box6;
+}
+.item-g{
+grid-area: box7;
+}
+.item-h{
+grid-area: box8;
+}
+.item-i{
+grid-area: box9;
+}
+.item-j{
+grid-area: box10;
+}
+.item-k{
+grid-area: box11;
+}
+.item-l{
+grid-area: box12;
+}
+.item-m{
+grid-area: box13;
+}
+}
+
+
+@media (min-width:700px) {
+
+
 .grid-container {
 
   margin-left: 100px;
@@ -110,7 +286,9 @@ cursor: url('images/schess.png'), default;
 }
 
 #info{
-  margin-left: 80px;
+  margin-left: 10%;
+}
+
 }
 
 </style>
@@ -130,11 +308,13 @@ cursor: url('images/schess.png'), default;
   </div>
 
 
+<div class="wrapper">
 <div id="info">
   <p>Following images are found from The New York Public Library website, in a result of "chess."
       <br>
     <a href="https://digitalcollections.nypl.org/items/7af69940-9e96-0132-0311-58d385a7b928"> Further information would be find here.</a> </p>
 </div>
+
 
 <div class="grid-container">
 
@@ -197,13 +377,7 @@ cursor: url('images/schess.png'), default;
       </div>
 
 
-
-
-
-
-
-
-
+</div>
 
 
 
