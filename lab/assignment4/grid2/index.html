@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+  font-family: sans-serif;
+}
+
+@media (max-width:400px){
+
+}
+
+
+
+@media (min-width: 400px) {
+
+  #top-nav {
+    display: flex;
+    flex-direction:column ;
+    flex-wrap:wrap;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100px;
+    margin-bottom: 1%;
+  }
+
+.container1, .container2, .container3
+  {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 30vw;
+    margin: 0;
+    margin-top: 5%;
+    padding:0;
+  }
+
+li{
+  width: 8vw;
+  margin: 3vw;
+}
+
+  .text {
+
+    color: brown;
+    width: 8vw;
+    margin: 1vw;
+    font-size: 12px;
+    flex-direction: column;
+
+  }
+
+  #topnav{
+    float: left;
+    text-align: center;
+    padding: 3vw;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+
+
+  }
+
+  #topnav a {
+    background-color: white;
+    color: brown;
+    padding: 3vw;
+  }
+
+  #topnav a:hover {
+    background-color: brown;
+    color: white;
+    padding: 3vw;
+    border-radius: 50%;
+  }
+
+
+
+}
+
+
+/*여기서부터 고쳐봐*/
+
+p::first-letter{
+  color: brown;
+  font-size: 28px;
+}
+
+
+
+.container1::before{
+  content: '';
+  border: 5px solid brown;
+  width: 10vw;
+  opacity: 0.5;
+}
+
+.container3::before{
+  content: '';
+  border: 5px solid brown;
+  width: 10vw;
+  opacity: 0.5;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.container2::after{
+  content: '';
+  border: 5px solid brown;
+  width: 10vw;
+  opacity: 0.5;
+}
+
+.container1::before:hover{
+  content: '';
+  border: 5px solid brown;
+  width: 10vw;
+  height:10vw;
+  opacity: 1;
+}
+
+
+li{
+  margin: 0;
+  padding: 1vw;
+  width: 10vw;
+}
+
+
+li:nth-child(2n-1){
+    opacity:0.5;
+}
+
+li:nth-child(2n-1):hover{
+    opacity:1;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+li:nth-child(2n){
+    opacity:0.5;
+}
+
+li:nth-child(2n):hover{
+    opacity:1;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+
+a:nth-child(2n){
+  margin: 0;
+  padding: 1vw;
+  font-size: 23pt;
+  opacity: 1;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+ <div id="topnav">
+     <a class="active" href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/index.html">Home</a>
+
+     <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid1/index.html">Grid1</a>
+
+     <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid3/index.html">Grid3</a>
+
+     <a href="https://digitalcollections.nypl.org/">NYPL</a>
+ </div>
+
+<br>
+<br>
+<br>
+ <div class="container1">
+    <li><img src="images/21.jpg" class="item"></img></li>
+    <li><p class="text" a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99"> 1906 Buick Model F - 2 cylinder - 22 H.P</p></li>
+
+    <li><img src="images/19.jpg" class="item"></img></li>
+    <li><img src="images/20.jpg" class="item"></img></li>
+    <li><p class="text"  a href="https://digitalcollections.nypl.org/items/510d47db-b7c8-a3d9-e040-e00a18064a99"> Cadillac. 1909 Cadillac Touring Model '30'.</p>
+    <li><img src="images/16.jpg" class="item"></img></li>
+    <li><img src="images/17.jpg" class="item"></img></li>
+    <li><img src="images/18.jpg" class="item"></img></li>
+    <li><p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e4-28cb-a3d9-e040-e00a18064a99">  Auburn</p>
+    <li><img src="images/12.jpg" class="item"></img></li>
+  </div>
+
+   <div class="container2">
+    <li><img src="images/13.jpg" class="item"></img></li>
+    <li><img src="images/14.jpg" class="item"></img></li>
+    <li><img src="images/15.jpg" class="item"></img></li>
+    <li><p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e4-28f4-a3d9-e040-e00a18064a99">Bantam.Collection of automobile photographs and news releases, 1877-1938</p>
+    <li><img src="images/7.jpg" class="item"></img></li>
+    <li><img src="images/8.jpg" class="item"></img></li>
+    <li><img src="images/9.jpg" class="item"></img></li>
+    <li><img src="images/10.jpg" class="item"></img></li>
+  </div>
+
+   <div class="container3">
+    <li><img src="images/11.jpg" class="item"></img></li>
+    <li><p class="text"  a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99">Ford phaeton.Collection of automobile photographs and news releases, 1877-1938.</p></li>
+
+    <li><img src="images/1.jpg" class="item"></img></li>
+    <li><img src="images/2.jpg" class="item"></img></li>
+    <li><img src="images/3.jpg" class="item"></img></li>
+    <li><img src="images/4.jpg" class="item"></img></li>
+    <li><img src="images/5.jpg" class="item"></img></li>
+    <li><img src="images/6.jpg" class="item"></img></li>
+    <li><p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e3-3be7-a3d9-e040-e00a18064a99"> 1938 Chevrolet master deluxe town sedan.</p></li>
+
+  </div>
+</body>
+
+
+
+
+</html>

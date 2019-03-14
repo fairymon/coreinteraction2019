@@ -1,0 +1,349 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Border Css Property</title>
+
+<style>
+
+body {
+background-color:#FBF0FF;
+}
+
+
+
+@media (max-width:700px){
+
+
+  .container1{
+    display:inline-flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    flex: column;
+    margin: auto;
+
+
+  }
+
+  .container1 a{
+    padding: 5vw;
+    font-size: 16pt;
+    font-family: Courier, monospace;
+    color: pink;
+
+  }
+
+a:hover{
+  background-color: pink;
+  color: white;
+}
+
+  .container{
+    display:inline-flex;
+    flex-direction: column ;
+    position: relative;
+    width: 23vw;
+    flex: row;
+  }
+
+  .item {
+    align-self: flex-start;
+    position: relative;
+    width: 10vw;
+    margin: 2vw;
+  }
+
+
+
+li{
+    list-style-type: none;
+}
+  p{
+    width: 10vw;
+
+    color: green;
+    opacity:0;
+  }
+
+  p:hover{
+    opacity:1;
+  }
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+///* from here*//
+
+a:visited{
+  color:red;
+}
+
+a:hover{
+  color:white;
+  background-color: pink;
+
+}
+
+a:active{
+  color:purple;
+}
+
+
+li:nth-child(odd){
+}
+
+li:nth-child(odd):hover{
+  transform: rotate(15deg);
+}
+
+
+p::first-line{
+  color: brown;
+}
+
+p::first-letter{
+  color: hotpink;
+}
+p:only-of-type {
+  font-size: 20px;
+}
+
+
+
+.container:nth-child(even)::before{
+  content: '\1F34F';
+  text-align: center;
+  border: 5px solid pink;
+  border-radius: 50%;
+  padding: 3vw;
+  width: 10vw;
+  height: 10vw;
+}
+
+
+
+.container:nth-child(odd)::after{
+  content: '\1F34F';
+  border: 5px solid pink;
+  border-radius: 50%;
+    text-align: center;
+    padding: 3vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+}
+
+
+
+
+
+
+@media (min-width:700px){
+
+
+  .container1{
+    display:inline-flex;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    flex: row;
+
+    margin: auto;
+
+
+  }
+
+  .container1 a{
+    padding: 5vw;
+    font-size: 23pt;
+    font-family: Courier, monospace;
+    color: pink;
+
+  }
+
+a:hover{
+  background-color: pink;
+  color: white;
+}
+
+  .container{
+    display:inline-flex;
+    flex-direction: column ;
+    position: relative;
+    width: 23vw;
+    flex: row;
+  }
+
+  .item {
+    align-self: flex-start;
+    position: relative;
+    width: 10vw;
+    margin: 2vw;
+  }
+
+
+
+li{
+    list-style-type: none;
+}
+  p{
+    width: 10vw;
+
+    color: green;
+    opacity:0;
+  }
+
+  p:hover{
+    opacity:1;
+  }
+
+body{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+///* from here*//
+
+a:visited{
+  color:red;
+}
+
+a:hover{
+  color:white;
+  background-color: pink;
+
+}
+
+a:active{
+  color:purple;
+}
+
+
+
+
+
+
+
+li:nth-child(odd){
+}
+
+li:nth-child(odd):hover{
+  transform: rotate(15deg);
+}
+
+
+p::first-line{
+  color: brown;
+}
+
+p::first-letter{
+  color: hotpink;
+}
+p:only-of-type {
+  font-size: 20px;
+}
+
+
+
+.container:nth-child(even)::before{
+  content: '\1F34F';
+  text-align: center;
+  border: 5px solid pink;
+  border-radius: 50%;
+  padding: 3vw;
+}
+
+
+
+.container:nth-child(odd)::after{
+  content: '\1F34F';
+  border: 5px solid pink;
+  border-radius: 50%;
+    text-align: center;
+    padding: 3vw;
+}
+
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+  <div class="container1">
+  <a href=""> Home </a>
+  <a href=""> Grid1 </a>
+  <a href=""> Grid2 </a>
+
+  </div>
+
+
+  <div class="container">
+    <li><img src="images/f1.jpg" class="item"></img></li>
+    <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e3-3be7-a3d9-e040-e00a18064a99"> Ombelles
+      </p></li>
+    <li><img src="images/f2.jpg" class="item"></img></li>
+    <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-343c-a3d9-e040-e00a18064a99
+"> Cinéraires
+    </p></li>
+</div>
+
+<div class="container">
+    <li><img src="images/f3.jpg" class="item"></img></li>
+    <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47dd-d4d7-a3d9-e040-e00a18064a99
+"> Passe Flower. Easter Flower</p></li>
+  <li><img src="images/f4.jpg" class="item"></img></li>
+  <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e1-c66b-a3d9-e040-e00a18064a99
+    ">Rikka zu = Flower arrangements.
+  </p></li>
+</div>
+
+<div class="container">
+  <li><img src="images/f5.jpg" class="item"></img></li>
+  <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b7ac-a3d9-e040-e00a18064a99
+">Lambertia formosa</p></li>
+
+  <li><img src="images/f6.jpg" class="item"></img>
+  <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b81a-a3d9-e040-e00a18064a99
+">Everlasting Flower</p></li>
+</div>
+
+
+<div class="container">
+  <li><img src="images/f7.jpg" class="item"></img></li>
+  <li><p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b7e0-a3d9-e040-e00a18064a99
+">Flannel Flower
+</p></li>
+  <li><img src="images/f8.jpg" class="item"></img></li>
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

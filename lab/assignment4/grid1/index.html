@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Border Css Property</title>
+
+<style>
+
+
+@media (max-width:500px) {
+
+  li:nth-child(odd){
+      opacity:0.5;
+  }
+
+  li:nth-child(odd):hover{
+      opacity:1;
+      background-color: red;
+  }
+
+  li:nth-child(even){
+      opacity:0.5;
+  }
+
+  li:nth-child(even):hover{
+      opacity:1;
+      background-color: blue;
+  }
+
+  .container1 {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin:5vw;
+  width: 30vw;
+
+
+  }
+
+  .container2 {
+  display:flex;
+  flex-flow: column;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin:5vw;
+  width: 30vw;
+  }
+
+  .topnav a {
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: blue;
+    color: black;
+  }
+
+  li{
+    margin: 2vw;
+    width: 30vw;
+  }
+
+
+  /*여기서부터 고쳐봐*/
+
+  p::first-letter{
+    color: hotpink;
+    font-size: 28px;
+  }
+
+
+  a:link{
+    color:hotpink;
+  }
+
+  a:visited{
+    color:blue;
+  }
+
+  a:hover{
+    color:red;
+  }
+
+  a:active{
+    color:purple;
+  }
+
+
+
+
+}
+
+@media (min-width:500px) {
+.container1 {
+display: inline-flex;
+flex-flow: column;
+flex-direction: column;
+flex-wrap: nowrap;
+margin-left:10vw;
+width: 30vw;
+
+
+}
+
+.container2 {
+display:inline-flex;
+flex-flow: column;
+flex-direction: column;
+flex-wrap: nowrap;
+margin-left:10vw;
+width: 30vw;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+body {
+cursor: url('images/schess.png'), default;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*여기서부터 고쳐봐*/
+
+p::first-letter{
+  color: hotpink;
+  font-size: 28px;
+}
+
+
+a:link{
+  color:hotpink;
+}
+
+a:visited{
+  color:blue;
+}
+
+a:hover{
+  color:red;
+}
+
+a:active{
+  color:purple;
+}
+
+li{
+  margin: 0;
+  padding: 1vw;
+}
+
+
+li:nth-child(even){
+    opacity:0.5;
+}
+
+li:nth-child(even):hover{
+    opacity:1;
+    background-color: red;
+}
+
+li:nth-child(odd){
+    opacity:0.5;
+}
+
+li:nth-child(odd):hover{
+    opacity:1;
+    background-color: blue;
+}
+
+
+#info{
+  margin-left: 10%;
+}
+
+}
+}
+</style>
+
+
+
+</head>
+
+
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid2/index.html">Grid2</a>
+    <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid3/index.html">Grid3</a>
+    <a href="https://digitalcollections.nypl.org/">NYPL</a>
+  </div>
+
+
+<div class="wrapper">
+<div id="info">
+  <p>Following images are found from The New York Public Library website, in a result of "chess."
+      <br>
+    <a href="https://digitalcollections.nypl.org/items/7af69940-9e96-0132-0311-58d385a7b928"> Further information would be find here.</a> </p>
+</div>
+
+<div class="show">
+<div class="container1">
+          <li><img class=" item-a " src="images/a.jpg"></li>
+          <li><img class="item-b " src="images/b.jpg"></li>
+          <li><img class=" item-c" src="images/c.jpg"></li>
+          <li><img class=" item-d" src="images/d.jpg"></li>
+          <li><img class="item-e" src="images/e.jpg"></li>
+          <li><img class=" item-f" src="images/f.jpg"></li>
+</div>
+
+<div class="container2">
+          <li><img class="item-h" src="images/h.jpg"></li>
+          <li><img class="item-i" src="images/i.jpg"></li>
+          <li><img class="item-j" src="images/j.jpg"></li>
+          <li><img class="item-k" src="images/k.jpg"></li>
+          <li><img class=" item-l" src="images/l.jpg"></li>
+          <li><img class=" item-m" src="images/m.jpg"></li>
+</div>
+</div>
+
+
+
+</body>
+
+
+
+
+</html>
