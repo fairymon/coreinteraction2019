@@ -1,0 +1,207 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Major+Mono+Display" rel="stylesheet">
+  <title>biz card</title>
+
+<style>
+
+#intro_text {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #849974; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0;
+  height: 10%; }
+  to { width: 70%;
+  height: 20%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #849974; }
+}
+
+
+  body{
+    background-color: #feecec;
+  }
+
+
+  img{
+    width:180px;
+    display: inline-block;
+    margin-left:8%;
+
+  }
+
+#intro{
+  width:80%;
+  margin: 10% 10%;
+  border-bottom: 3px solid #849974;
+
+}
+
+h1, #intro_text{
+
+  display: inline-block;
+  margin:0;
+  color: #613A43;
+
+
+}
+
+#intro_text{
+  width:70%;
+  padding-left:2%;
+  padding-right:2%;
+
+}
+
+
+.dot{
+  width: 50px;
+  height: 50px;
+  border-radius:50px;
+  float:left;
+  display: inline-block;
+}
+
+.dot{
+  width: 150px;
+  height: 150px;
+  border-radius:150px;
+line-height: 17px;
+  text-align: center;
+}
+
+.one {
+background-color: #fcf6b2;
+
+}
+.two {
+background-color: #ffcd26;
+}
+.three {
+background-color: #faa21c;
+}
+.four {
+background-color: #f9c2d0;
+
+}
+.five {
+background-color: #da1e31;
+}
+.six {
+background-color: #4c1615;
+}
+
+
+.line{
+  width:80%;
+  height:200px;
+
+  margin-left:32%;
+  color:#849974;
+}
+
+.linetext{
+  width:20%;
+  float: left;
+  display:inline;
+  padding:20px;
+  margin:0;
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+<div id="intro">
+  <img src="images/winecover.jpg" class="image">
+  <div id="intro_text">
+  <h1> Perfect pairing for wines </h1>
+  <p>This book is designed for people who wants to enjoy their relaxing moment in their daily lives with a glass a wine, paired with a perfect food. Wine not only uplifts people’s moods, but also supports our body, when consumed with right amount. To maximize its benefits, the importance of pairing of food and wine it is needless to say.
+  Wines are divide to specific categories, such as red wines, white wines, rose, champagne, and dessert wine, based on the method and types of grapes that were used. Since each wine has different tastes in sweetness, acidity, body, and fruity, flavors of wines are identical and they have specific pairing to each food. The number one guideline is to bring out the best characteristics of a wine. I would like to introduce few simple guidelines when finding a perfect fair for your wine.
+  </p>
+  </div>
+</div>
+
+
+<div class="line">
+<div class="dot one">
+  <br><br><br><br>
+ Champagne
+</div>
+<p class=linetext>Just about anything that's salty, fried or fishy will pair magically with Champagne. Don't just use it as an aperitif, try it with the main course as well.</p>
+<img src="images/wc.png">
+</div>
+
+<br>
+
+<div class="line">
+<div class="dot two">   <br><br><br><br>riesling</div>
+<p class=linetext>Off-dry Riesling wines make a great pairing to spicy Indian and Asian cuisines and do excellently alongside duck, pork, bacon, shrimp and crab.
+  </p>
+<img src="images/w3.png">
+</div>
+
+<br>
+
+<div class="line">
+<div class="dot three">  <br><br><br><br>Sauvignon Blanc</div>
+<p class=linetext>A wonderful choice with herb-driven sauces over chicken, tofu or fish dishes, matched with feta or chèvre, and paired with Thai and Vietnamese cuisine.
+</p>
+<img src="images/w19.png">
+</div>
+
+<br>
+
+<div class="line">
+<div class="dot four">   <br><br><br><br>mosccato</div>
+<p class=linetext> Moscato pairs particularly well with spicy Asian fare (think Thai, Szechuan, Korean), as the sweet from the wine tames the heat in the food. </p>
+<img src="images/w7.png">
+</div>
+
+<br>
+
+<div class="line">
+<div class="dot five">   <br><br><br><br>pinot noir</div>
+<p class=linetext> A very versatile food pairing wine given it's higher high acidity and lower tannin. Pinot Noir pairs particularly well with duck, chicken, pork, and mushrooms.</p>
+<img src="images/w11.png">
+</div>
+
+<br>
+
+<div class="line">
+<div class="dot six">   <br><br><br><br>syrah</div>
+<p class=linetext>
+  Darker meats and exotic spices bring out the fruit notes of Syrah. Try it with Lamb Shawarma, Gyros, Asian 5-spice pork and even Indian tandoori meats.
+  </p>
+<img src="images/w21.png">
+</div>
+
+
+</body>
+
+</html>
