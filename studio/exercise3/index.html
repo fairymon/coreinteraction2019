@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>reactive</title>
+<style>
+
+  html, body, p{
+    margin:0;
+    padding:0;
+
+  }
+
+
+
+  #bottom-right{
+    width:10vw;
+    height:28vh;
+    border-right:4vw solid #AFDCEB;
+    border-bottom:4vw solid #AFDCEB;
+
+    border-radius: 0 0 30vw 0;
+    float: left;
+}
+
+#bottom-left{
+       width:10vw;
+       height:28vh;
+       border-left:4vw solid #AFDCEB;
+       border-bottom:4vw solid #AFDCEB;
+
+       border-radius: 0 0 0 30vw;
+       float: left;
+}
+
+#bottom
+{
+  position:fixed;
+  left:30vw;
+  top: 50vh;
+}
+
+.left{
+  position:fixed;
+  left:30vw;
+  top: 5vh;
+}
+
+#left-top{
+width: 4vw;
+height:40vh;
+background-color: #AFDCEB;
+float:left;
+position:fixed;
+}
+
+#left-right{
+height:4vw;
+width: 15vw;
+background-color: #AFDCEB;
+float:left;
+margin-top: 16vh;
+position:fixed;
+}
+
+#right{
+
+}
+
+
+
+#dot{
+  height: 4vw;
+  width: 4vw;
+  border-radius: 4vw;
+  background:#AFDCEB;
+  float: left;
+  margin-left: 54vw;
+  position:fixed;
+  top: 5vh;
+}
+
+#right{
+width: 4vw;
+height:30vh;
+background-color:#AFDCEB;
+
+margin-left: 54vw;
+margin-top: 21vh;
+position:fixed;
+ float: left;
+}
+
+
+
+  </style>
+</head>
+
+
+<div class="left">
+<div id="left-top"></div>
+<div id="left-right"></div>
+</div>
+
+<div id="right">
+</div>
+
+<div id="dot">
+</div>
+
+<div id="bottom">
+<div id="bottom-left"></div>
+<div id="bottom-right"></div>
+</div>
