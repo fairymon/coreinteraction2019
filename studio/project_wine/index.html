@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <title>wine</title>
+<style>
+
+
+</style>
+</head>
+
+<body>
+
+
+  <div class='box'>
+    <div id="fill" class="fill ">
+        <div id="glass"></div>
+        <div class='wave '></div>
+    </div>
+  </div>
+
+
+<textarea name="text" rows="10" cols="10" wrap="soft" id="textbox" class="textbox2"
+placeholder="
+Let me help you relax. What stresses you out?
+Write it down here."
+>
+</textarea>
+<input type="Tell me" value="Submit" style="width:10vw; height:5vw; "id="button">
+<!--<input type="text" cols="40" rows="40" style="width:800px; height:500px;
+wrap="soft" "
+placeholder="Let me help you relax. What stresses you out?">
+-->
+<!--added-->
+
+
+<audio id="PoppingSound" preload="auto">
+    <source src="../PoppingSound.mp3"></source>
+</audio>
+
+
+  <script>
+  $('#button').click(function(){
+      $('#fill').addClass('animateFill');
+  		$('.wave').addClass('animateWave');
+      $('.textbox2').addClass('textbox');
+  });
+
+
+
+const PoppingSound = new Audio("../PoppingSound.mp3");
+$('#button').click(e => PoppingSound.play());
+
+
+
+  $('#button').click(function(){
+      $('#textarea').css('opacity', '0');
+      $('#button').css('opacity', '0');
+
+  });
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
