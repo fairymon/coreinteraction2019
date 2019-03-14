@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Dosis|Quicksand" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <title>FillYourGlass</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+
+  <div class='box'>
+    <div id="fill" class="fill ">
+        <div id="glass"></div>
+        <div class='wave '></div>
+    </div>
+  </div>
+
+
+<textarea name="text" rows="10" cols="10" wrap="soft" id="textbox" class="textbox2"
+placeholder="
+Let me help you relax. What stresses you out?
+Write it down here."
+>
+</textarea>
+<input type="Tell me" value="Let it go" style="width:10vw; height:5vw; "id="button">
+<!--<input type="text" cols="40" rows="40" style="width:800px; height:500px;
+wrap="soft" "
+placeholder="Let me help you relax. What stresses you out?">
+-->
+<!--added-->
+
+
+<audio id="PoppingSound" preload="auto">
+    <source src="https://fairymon.github.io/coreinteraction2019/studio/PoppingSound.mp3" type="audio/mp3"></source>
+
+</audio>
+
+
+<audio id="pouring" preload="auto">
+    <source src="https://fairymon.github.io/coreinteraction2019/studio/pouring.mp3" type="audio/mp3"></source>
+</audio>
+
+  <script>
+  $('#button').click(function(){
+      $('#fill').addClass('animateFill');
+  		$('.wave').addClass('animateWave');
+      $('.textbox2').addClass('textbox');
+  });
+
+
+
+const PoppingSound = new Audio("../PoppingSound.mp3");
+$('#button').click(e => PoppingSound.play());
+
+const pouring = new Audio("../pouring.mp3");
+$('#button').click(e => pouring.play());
+
+
+
+
+  $('#button').click(function(){
+      $('#textarea').css('opacity', '0');
+      $('#button').css('opacity', '0');
+
+  });
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
