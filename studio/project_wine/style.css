@@ -104,9 +104,9 @@ textarea[name=text]{
     width:80%;
     height: 80%;
     font-size: 28pt;
-    border-radius:20%;
+
     margin: auto;
-    border: 0 solid transparent;
+    border: none;
     padding:5vw;
     box-sizing:border-box;
     transition:.3s;
@@ -115,7 +115,7 @@ textarea[name=text]{
     background: transparent;
     color: #890014;
 font-family: 'Quicksand', sans-serif;
-  
+    padding-top: 10vw;
 
   }
 
@@ -161,13 +161,15 @@ font-family: 'Quicksand', sans-serif;
 
 textarea[name=text]:focus{
     color: #890014;
-    border: 0 solid transparent;
+
+    border: none;
   }
 
 textarea[name=text]::placeholder{
     color: #890014;
       border: 0 solid transparent;
       width: 100%;
+        border: none;
 
   }
 

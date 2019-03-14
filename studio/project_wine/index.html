@@ -32,7 +32,7 @@ Let me help you relax. What stresses you out?
 Write it down here."
 >
 </textarea>
-<input type="Tell me" value="Submit" style="width:10vw; height:5vw; "id="button">
+<input type="Tell me" value="Let it go" style="width:10vw; height:5vw; "id="button">
 <!--<input type="text" cols="40" rows="40" style="width:800px; height:500px;
 wrap="soft" "
 placeholder="Let me help you relax. What stresses you out?">
@@ -45,6 +45,10 @@ placeholder="Let me help you relax. What stresses you out?">
 </audio>
 
 
+<audio id="pouring" preload="auto">
+    <source src="../pouring.mp3"></source>
+</audio>
+
   <script>
   $('#button').click(function(){
       $('#fill').addClass('animateFill');
@@ -56,6 +60,10 @@ placeholder="Let me help you relax. What stresses you out?">
 
 const PoppingSound = new Audio("../PoppingSound.mp3");
 $('#button').click(e => PoppingSound.play());
+
+const pouring = new Audio("../pouring.mp3");
+$('#button').click(e => pouring.play());
+
 
 
 
