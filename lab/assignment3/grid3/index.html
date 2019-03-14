@@ -1,0 +1,264 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <title> Border Css Property</title>
+
+<style>
+
+body {
+background-color:#FBF0FF;
+}
+
+
+@media (max-width: 400px){
+  .container1{
+    display:flex;
+    flex-direction: row ;
+    position: relative;
+    flex: row;
+    margin:auto;
+    width: 100%;
+    text-align: center;
+      border: 3px dotted white;
+    padding: 5%;
+    margin-bottom: 5%;
+
+
+  }
+
+  .item {
+    align-self: flex-start;
+      position: relative;
+      width: 40%;
+        margin:auto;
+  }
+
+  p.item{
+    width: 30%;
+    margin:auto;
+  }
+
+  p{
+    width: 30%;
+    padding-left: 5%;
+    color: green;
+  }
+
+
+.container{
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0;
+    position: relative;
+
+}
+
+.container1 a{
+  font-size: 30px;
+  color: white;
+  text-align: center;
+
+}
+
+img{
+  margin: auto;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+
+
+@media (min-width: 400px) and (max-width: 700px){
+
+
+    .container1{
+      display:inline-flex;
+      flex-direction: column ;
+      position: relative;
+      width: 100%;
+      flex: row;
+    }
+
+    .item {
+      align-self: flex-start;
+        position: relative;
+        width: 40%;
+    }
+
+    p.item{
+      width: 30%;
+    }
+
+    p{
+      width: 30%;
+      padding-left: 5%;
+      color: green;
+    }
+
+
+  .container{
+    display: inline-flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0;
+      position: relative;
+
+  }
+
+  .container1 a{
+    font-size: 21px;
+    color: purple;
+    width: 100%;
+    border: 3px dotted white;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  img{
+    margin: auto;
+  }
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width:700px){
+
+
+  .container1{
+    display:flex;
+    flex-direction: row ;
+    position: relative;
+    width: 100%;
+    flex: row;
+
+  }
+
+  .item {
+    align-self: flex-start;
+      position: relative;
+      width: 50%;
+  }
+
+  p.item{
+    width: 30%;
+    margin: auto;
+  }
+
+  p{
+    width: 30%;
+    padding-left: 5%;
+    color: green;
+    margin: auto;
+  }
+
+
+.container{
+  display: inline-flex;
+  flex-direction: column ;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0;
+    position: relative;
+margin: auto;
+    width: 40%;
+}
+
+.container1 a{
+  font-size: 21px;
+  color: purple;
+  width: 60%;
+  border: 3px dotted white;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+}
+img{
+  margin: auto;
+}
+body{
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+  <div class="container1">
+  <a href=""> Home </a>
+  <a href=""> Grid1 </a>
+  <a href=""> Grid2 </a>
+
+  </div>
+
+
+  <div class="container">
+    <img src="images/f1.jpg" class="item"></img>
+      <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e3-3be7-a3d9-e040-e00a18064a99"> Ombelles
+      </p>
+    <img src="images/f2.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-343c-a3d9-e040-e00a18064a99
+"> Cinéraires
+    </p>
+    <img src="images/f3.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47dd-d4d7-a3d9-e040-e00a18064a99
+
+"> Passe Flower. Easter Flower</p>
+    <img src="images/f4.jpg" class="item"></img>
+    <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47e1-c66b-a3d9-e040-e00a18064a99
+">Rikka zu = Flower arrangements.
+  </p>
+  </div>
+
+
+<div class="container">
+  <img src="images/f5.jpg" class="item"></img>
+  <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b7ac-a3d9-e040-e00a18064a99
+">Lambertia formosa</p>
+
+  <img src="images/f6.jpg" class="item"></img>
+  <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b81a-a3d9-e040-e00a18064a99
+">Everlasting Flower</p>
+
+  <img src="images/f7.jpg" class="item"></img>
+  <p class="item"  a href="https://digitalcollections.nypl.org/items/510d47da-b7e0-a3d9-e040-e00a18064a99
+">Flannel Flower
+</p>
+  <img src="images/f8.jpg" class="item"></img>
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

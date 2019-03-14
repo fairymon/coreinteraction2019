@@ -1,0 +1,12 @@
+
+
+img{
+
+float:left;
+width:10vw;
+}
+
+#list{
+  float:left;
+  display: inline-block;
+}

@@ -1,0 +1,281 @@
+<!doctype html>
+
+<html>
+<head>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+    <title> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+@media (max-width:400px){
+  #topnav {
+    display: flex;
+    flex-direction:column ;
+    flex-flow: column;
+    flex-wrap:wrap;
+    margin-top: 0;
+    padding-top: 0;
+    width: 10%;
+  }
+
+body{
+  background-color: brown;
+
+}
+  .container1, .container2, .container3, .container4, .container5, .container6
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 40%;
+    margin: 0;
+    margin-top: 5%;
+    padding:0;
+    margin-left: 20vw;
+  }
+
+  .text {
+
+    color: white;
+    width: 150px;
+    font-size: 16px;
+    flex-direction: row;
+    flex-flow: row;
+    display: inline-block;
+margin-left: 10vw;
+  }
+
+  #topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 40%;
+    font-size: 14px;
+    width: 80%;
+  }
+
+  #topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .item{
+    flex-direction: column;
+    flex-flow: column;
+    display: inline-block;
+    width: 100%;
+    height: 120%;
+    margin-left: 10vw;
+  }
+
+}
+
+
+
+@media (min-width: 400px) and (max-width: 600px){
+
+  #top-nav {
+    display: flex;
+    flex-direction:column ;
+    flex-wrap:wrap;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100px;
+    margin-bottom: 1%;
+  }
+
+.container1, .container2, .container3, .container4, .container5, .container6
+  {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 40%;
+    margin: 0;
+    margin-top: 5%;
+    padding:0;
+  }
+
+  .text {
+
+    color: brown;
+    width: 130px;
+    font-size: 12px;
+    flex-direction: row;
+    flex-flow: row;
+    display: inline-block;
+
+  }
+
+  #topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    background-color: brown;
+        width: 80px;
+  }
+
+  #topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .item{
+    flex-direction: column;
+    flex-flow: column;
+    display: inline-block;
+    width: 50%;
+    height: 55%;
+  }
+}
+
+
+
+
+@media (min-width:601px)
+{
+
+  body {
+  cursor: url('images/car.png'), default;
+  }
+
+  #top-nav {
+    flex-direction:row ;
+    flex-wrap:wrap;
+    margin-top: 0;
+    padding-top: 0;
+    width: 50px;
+    margin-bottom: 1%;
+
+  }
+
+.container1, .container2, .container3, .container4, .container5, .container6
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .text {
+
+    padding-left: 10px;
+    color: green;
+    padding-top: 10%;
+    align-self: flex-start;
+      position: relative;
+    width: 400px;
+    font-size: 18px;
+    padding-top: 3%;
+  }
+
+  #topnav a {
+    float: left;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 21px;
+  }
+
+  #topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .item{
+    flex-direction: row;
+    flex-flow: row;
+    display: inline-block;
+    width: 10%;
+    height: 15%;
+  }
+}
+
+</style>
+
+
+
+</head>
+
+
+<body>
+
+
+ <div id="topnav">
+     <a class="active" href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/index.html">Home</a>
+
+     <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid1/index.html">Grid1</a>
+
+     <a href="https://fairymon.github.io/coreinteraction2019/lab/assignment2/grid3/index.html">Grid3</a>
+
+     <a href="https://digitalcollections.nypl.org/">NYPL</a>
+ </div>
+
+<br>
+<br>
+<br>
+ <div class="container1">
+    <img src="images/21.jpg" class="item"></img>
+    <p class="text" a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99"> 1906 Buick Model F - 2 cylinder - 22 H.P
+ </p>
+</div>
+
+  <div class="container2">
+    <img src="images/19.jpg" class="item"></img>
+    <img src="images/20.jpg" class="item"></img>
+    <p class="text"  a href="https://digitalcollections.nypl.org/items/510d47db-b7c8-a3d9-e040-e00a18064a99"> Cadillac. 1909 Cadillac Touring Model '30'.
+ </p>
+  </div>
+
+    <div class="container3">
+      <img src="images/16.jpg" class="item"></img>
+      <img src="images/17.jpg" class="item"></img>
+      <img src="images/18.jpg" class="item"></img>
+      <p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e4-28cb-a3d9-e040-e00a18064a99">  Auburn
+    </p>
+    </div>
+
+
+  <div class="container4">
+    <img src="images/12.jpg" class="item"></img>
+    <img src="images/13.jpg" class="item"></img>
+    <img src="images/14.jpg" class="item"></img>
+    <img src="images/15.jpg" class="item"></img>
+    <p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e4-28f4-a3d9-e040-e00a18064a99">Bantam.Collection of automobile photographs and news releases, 1877-1938
+  </p>
+  </div>
+
+    <div class="container5">
+      <img src="images/7.jpg" class="item"></img>
+      <img src="images/8.jpg" class="item"></img>
+      <img src="images/9.jpg" class="item"></img>
+      <img src="images/10.jpg" class="item"></img>
+      <img src="images/11.jpg" class="item"></img>
+      <p class="text"  a href="https://digitalcollections.nypl.org/items/510d47db-ba00-a3d9-e040-e00a18064a99">Ford phaeton.Collection of automobile photographs and news releases, 1877-1938.
+    </p>
+    </div>
+
+
+  <div class="container6">
+    <img src="images/1.jpg" class="item"></img>
+    <img src="images/2.jpg" class="item"></img>
+    <img src="images/3.jpg" class="item"></img>
+    <img src="images/4.jpg" class="item"></img>
+    <img src="images/5.jpg" class="item"></img>
+    <img src="images/6.jpg" class="item"></img>
+    <p class="text"  a href="https://digitalcollections.nypl.org/items/510d47e3-3be7-a3d9-e040-e00a18064a99"> 1938 Chevrolet master deluxe town sedan.
+ </p>
+  </div>
+</body>
+
+
+
+
+</html>
