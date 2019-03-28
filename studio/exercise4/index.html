@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>JS/JQUERY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<style>
+    body {
+        margin: 10;
+        padding: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    #clock {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: grey;
+        transition: .5s ease;
+        margin: 0;
+  position: relative;
+  z-index: 2;
+    }
+
+    #clock-shadow {
+      width: 0;
+height: 0;
+border-left: 200px solid transparent;
+border-right: 200px solid transparent;
+border-bottom: 300px solid #8F9779;
+
+
+        transition: .5s ease;
+        margin: 0;
+
+
+
+        position:fixed;
+        margin-left: 35%;
+        margin-top: 0%;
+        z-index: 5;
+        text-align: center;
+    }
+
+    #clock-box{
+      width: 400px;
+      height: 200px;
+
+      margin-left: 35%;
+      margin-top: 25%;
+      padding: auto;
+    }
+
+
+
+    body{
+      font-family: sans-serif;
+      background: -webkit-linear-gradient(top, #f9ffe2 0%,#e8f6ff 48%,#88bbdd 100%); /* Chrome10-25,Safari5.1-6 */
+      color: yellow;
+    }
+
+    #intro{
+      margin:80px;
+
+    }
+
+
+</style>
+
+<body>
+
+
+    <div id="clock-shadow">
+  <p id="ticker2">
+  <br>
+</p>
+  </div>
+
+    <div id="clock-box">
+    <div id="clock"></div>
+  </div>
+
+  <div id="intro">
+    <p id="name"></p>
+    <p id="time"></p>
+    <p id="ticker"></p>
+</div>
+   </body>
+</html>
