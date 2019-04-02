@@ -32,7 +32,7 @@ $(document).ready(function(){
     var border = Math.random() * width *0.5;
     $('.circle').css("border-radius", border)
 
-    },2000)
+  },2500)
 
 
 
