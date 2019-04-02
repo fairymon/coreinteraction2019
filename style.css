@@ -1,0 +1,36 @@
+body{
+  background-color: #99ccff;
+  font-family: sans-serif;
+}
+
+#lab{
+  color: white;
+}
+
+#lab:hover
+{
+  color: white;
+  font-style: italic;
+}
+
+#studio{
+  color: white;
+
+}
+
+#studio:hover
+{
+  color: white;
+  font-style: italic;
+
+}
+
+li{
+  color: purple;
+  font-size: 14px;
+  list-style-type: none;
+}
+a:hover{
+  color: white;
+  font-size: 14px;
+}
