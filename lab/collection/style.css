@@ -1,0 +1,136 @@
+html{
+
+}
+
+
+
+#main{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  top: 30%;
+}
+
+.content h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  mix-blend-mode: exclusion;
+  z-index: 10;
+  color: #ff9500;
+  font-size: 8vw;
+}
+.content p{
+  font-size: 1.2vw;
+  margin-top:0;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 100px;
+  border-radius: 200px;
+  font-size: 1.2vw;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+    mix-blend-mode: overlay;
+    font-family: inherit;
+    right: 10vw;
+    bottom: 10vw;
+    position: absolute;
+
+}
+
+#myBtn:hover {
+  background: #ddd;
+
+  mix-blend-mode: overlay;
+}
+
+.link{
+  line-height: 1.8vw;
+}
+
+.link:hover{
+  color: #1034A6;
+  text-decoration: underline wavy #1034A6;
+}
+
+#navigation{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 40vw;
+  position: fixed;
+  color: #0080FF;
+  right: 5vw;
+  margin-top: 2vw;
+}
+
+.continent{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+
+}
+
+.continent-list{
+  display: none;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+.link{
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  color: #0080FF;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
+  left: 5vw;
+  font-size: 1vw;
+
+}
+
+footer p{
+  margin-right: 5vw;
+}
+
+footer a{
+    color: #0080FF;
+}
+
+
+#continent-asia, #continent-america, #continent-europe{
+transition: 0.8s;
+  margin-bottom: 0.8vw;
+}
