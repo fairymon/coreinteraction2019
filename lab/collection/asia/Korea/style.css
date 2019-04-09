@@ -1,0 +1,220 @@
+html{
+
+}
+
+
+
+#main{
+  width: 100vw;
+  height: 15vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  top: 0vw;
+  left: 5vw;
+}
+
+.content h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  mix-blend-mode: exclusion;
+  z-index: 10;
+  color: #ff9500;
+  font-size: 6vw;
+
+}
+.content h1:hover{
+animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: 0em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 0.5em;
+  }
+}
+
+
+.content p{
+  font-size: 1vw;
+  margin-top:0;
+  color: #0080FF;
+}
+
+/* Style the button used to pause/play the video */
+
+.link{
+  line-height: 1.8vw;
+}
+
+.link:hover{
+  color: #1034A6;
+  text-decoration: underline wavy #1034A6;
+}
+
+#navigation{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 40vw;
+  position: fixed;
+  color: #0080FF;
+  right: 5vw;
+  margin-top: 2vw;
+}
+
+.continent{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+
+}
+
+.continent-list{
+  display: none;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+.link{
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  color: #0080FF;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
+  left: 5vw;
+  font-size: 1vw;
+
+}
+
+footer p{
+  margin-right: 5vw;
+}
+
+footer a{
+    color: #0080FF;
+}
+
+
+#continent-asia, #continent-america, #continent-europe{
+transition: 0.8s;
+  margin-bottom: 0.8vw;
+}
+
+/////
+
+body {
+  margin:0;
+  font-family:Georgia;
+}
+.box {
+  width:20vw;
+  height:20vh;
+  display:block;
+  position:relative;
+  animation: moveUp 3s infinite;
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-play-state: running;
+  margin:5vw;
+}
+
+.box:hover{
+  background-image: url('images/hovering.gif');
+  position: inherit;
+}
+
+
+@-webkit-keyframes moveUp {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+    transform: skewX(-3deg);
+	}
+
+  100% {
+		opacity: 1;
+		transform: translateY(80px);
+	}
+}
+
+
+
+
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+
+  position:absolute;
+  width:100vh;
+  height:100vw;
+  padding-top: 10vw;
+  padding-right: 0vw;
+  margin-right: 5vw;
+
+}
+
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+  display: inline-flex;
+  margin: -20vw;
+  padding-left: 20vw;
+  margin-right: 0;
+
+
+}
+
+#container3 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+  display: inline-flex;
+  margin:-50vw;
+  padding-left: 20vw;
+  margin-left: 0;
+}
