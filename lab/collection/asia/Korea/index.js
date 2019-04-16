@@ -4,6 +4,19 @@ $(document).ready(() => {
   //  $('.login-form').show();
   //});
 
+  //mouse enter Home//
+    $('#continent-home, #home-list').on('mouseenter', () => {
+      $('#home-list').fadeIn(1000);
+      $('#continent-home').css('letter-spacing', '0.6em');
+    });
+
+  //mouse leave Home//
+  $('#continent-home, #home-list').on('mouseleave', () => {
+    $('#home-list').fadeOut(700);
+    $('#continent-home').css('letter-spacing', 'initial');
+  });
+
+
 //mouse enter Asia//
   $('#continent-asia, #asia-list').on('mouseenter', () => {
     $('#asia-list').fadeIn(1000);
@@ -52,6 +65,32 @@ $('#continent-europe, #europe-list').on('mouseleave', () => {
 $('#save-ocean, #ocean-list').on('mouseleave', () => {
   $('#ocean-list').fadeOut(700);
   $('#save-ocean').css('letter-spacing', 'initial');
+});
+
+
+
+$('#country').on('mouseenter', () => {
+  $('#country').animate({
+    letterSpacing: "+=0.6em"
+  }, 700);
+});
+
+
+$('#country').on('mouseleave', () => {
+  $('#country').animate({
+    letterSpacing: "0em"
+  }, 700);
+});
+
+
+$('.one').on('mouseenter', () => {
+  $('.one').css('filter', 'grayscale(0)');
+
+
+
+
+
+
 });
 
 

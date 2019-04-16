@@ -1,8 +1,47 @@
 html{
+overflow-y:hidden;
+}
+
+*{
+  box-sizing: border-box;
+
 
 }
 
+a:visited{
+  color:tomato;
+  
+}
 
+#country{
+  width: 20vw;
+}
+
+.box.one{
+  transition: 1s;
+  filter: grayscale(100);
+}
+
+
+.box.one:hover{
+  width:30vw;
+  height:30vh;
+  margin: 0;
+  z-index: 60;
+  top: 0;
+  left: 0;
+
+  animation-play-state: paused;
+  transform: rotate(-30deg);
+
+  cursor: pointer;
+
+  background-image: url('hovering.gif');
+  opacity: 0;
+
+
+
+}
 
 #main{
   width: 100vw;
@@ -10,6 +49,7 @@ html{
   margin-bottom: 0;
   padding-bottom: 0;
   position: relative;
+overflow-x:visible
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -28,25 +68,27 @@ html{
   position: absolute;
   bottom: 0;
   color: white;
-  width: 100%;
+  width: 20%;
   text-align: left;
   margin: 0 auto;
   top: 0vw;
   left: 5vw;
+  z-index: 50;
 }
 
 .content h1{
   margin-bottom: 0;
   padding-bottom: 0;
-  mix-blend-mode: exclusion;
+
   z-index: 10;
   color: #ff9500;
   font-size: 6vw;
 
 }
-.content h1:hover{
-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
+
+
+
+
 @keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: 0em;
@@ -87,6 +129,7 @@ animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 40vw;
+  height: 15vh;
   position: fixed;
   color: #0080FF;
   right: 5vw;
@@ -145,8 +188,8 @@ body {
   font-family:Georgia;
 }
 .box {
-  width:20vw;
-  height:20vh;
+  width:25vw;
+  height:25vh;
   display:block;
   position:relative;
   animation: moveUp 3s infinite;
@@ -155,13 +198,11 @@ body {
   animation-direction: alternate;
   animation-duration: 3s;
   animation-play-state: running;
-  margin:5vw;
+  margin:2vw;
+
 }
 
-.box:hover{
-  background-image: url('images/hovering.gif');
-  position: inherit;
-}
+
 
 
 @-webkit-keyframes moveUp {
@@ -177,22 +218,24 @@ body {
 	}
 }
 
-
+#container::-webkit-scrollbar { width: 0 !important }
 
 
 #container {
   overflow-y:scroll;
   overflow-x:hidden;
+
   transform: rotate(270deg) translateX(-100%);
   transform-origin: top left;
-
   position:absolute;
   width:100vh;
   height:100vw;
-  padding-top: 10vw;
-  padding-right: 0vw;
+  padding-top: 20vw;
+  padding-right: 10vw;
   margin-right: 5vw;
 
+  top: 12vw;
+  z-index: 50;
 }
 
 #container2 {
@@ -201,9 +244,10 @@ body {
   white-space:nowrap;
   font-size:0;
   display: inline-flex;
-  margin: -20vw;
+  margin: -17vw;
   padding-left: 20vw;
   margin-right: 0;
+justify-content:center;
 
 
 }
@@ -214,7 +258,7 @@ body {
   white-space:nowrap;
   font-size:0;
   display: inline-flex;
-  margin:-50vw;
+  margin:-47vw;
   padding-left: 20vw;
   margin-left: 0;
 }
