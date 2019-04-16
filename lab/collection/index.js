@@ -7,7 +7,7 @@ $(document).ready(() => {
 //mouse enter Asia//
   $('#continent-asia, #asia-list').on('mouseenter', () => {
     $('#asia-list').fadeIn(1000);
-    $('#continent-asia').css('letter-spacing', '0.6em');
+    $('#continent-asia').css('letter-spacing', '0.5em');
   });
 
 //mouse leave Asia//
@@ -20,7 +20,7 @@ $('#continent-asia, #asia-list').on('mouseleave', () => {
 //mouse enter America//
   $('#continent-america, #america-list').on('mouseenter', () => {
     $('#america-list').fadeIn(1000);
-    $('#continent-america').css('letter-spacing', '0.6em');
+    $('#continent-america').css('letter-spacing', '0.5em');
   });
 
 //mouse leave America//
@@ -33,7 +33,7 @@ $('#continent-america, #america-list').on('mouseleave', () => {
 //mouse enter Europe//
   $('#continent-europe, #europe-list').on('mouseenter', () => {
     $('#europe-list').fadeIn(1000);
-    $('#continent-europe').css('letter-spacing', '0.6em');
+    $('#continent-europe').css('letter-spacing', '0.5em');
   });
 
 //mouse leave Europe//
@@ -43,15 +43,15 @@ $('#continent-europe, #europe-list').on('mouseleave', () => {
 });
 
 //mouse enter save Ocean//
-  $('#save-ocean, #ocean-list').on('mouseenter', () => {
+  $('#continent-ocean, #ocean-list').on('mouseenter', () => {
     $('#ocean-list').fadeIn(1000);
-    $('#save-ocean').css('letter-spacing', '0.6em');
+    $('#continent-ocean').css('letter-spacing', '0.5em');
   });
 
 //mouse leave save Ocean//
-$('#save-ocean, #ocean-list').on('mouseleave', () => {
+$('#continent-ocean, #ocean-list').on('mouseleave', () => {
   $('#ocean-list').fadeOut(700);
-  $('#save-ocean').css('letter-spacing', 'initial');
+  $('#continent-ocean').css('letter-spacing', 'initial');
 });
 
 
