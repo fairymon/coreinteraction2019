@@ -86,12 +86,9 @@ $('#country').on('mouseleave', () => {
 $('.one').on('mouseenter', () => {
   $('.one').css('filter', 'grayscale(0)');
 
-
-
-
-
-
 });
+
+
 
 
 });

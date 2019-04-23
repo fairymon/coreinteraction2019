@@ -16,7 +16,13 @@ img{
 
 }
 
+#dubai{
+  display: none;
+}
 
+#taiwan{
+  display: none;
+}
 
 #about{
   position: absolute;
@@ -27,16 +33,6 @@ top: 15vw;
   text-align: justify;
 }
 
-.gif{
-  width: 10vw;
-  position: fixed;
-  top: 13vw;
-  left: 0vw;
-  z-index: 1;
-  filter: none;
-
-
-}
 
 </style>
 
@@ -45,15 +41,19 @@ top: 15vw;
 
 
     <div class="content">
-
-      <h1 id="country">Korea </h1>
-      <img src="images/hovering.gif" class="gif">
-
-
+      <h1 id="country">Asia </h1>
     </div>
 
     <div id="about">
-      <div id="inform">This is Hyunji Jo's personal collection of oceans and water. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div id="inform">
+        <div id="kkorea">Korea</div>
+        <div id="ttaiwan" >Taiwan</div>
+        <div id="ddubai" >Dubai</div>
+        This is Hyunji Jo's personal collection of oceans and water.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+         ut aliquip ex ea commodo consequat.</div>
     </div>
 
     <div id="navigation">
@@ -112,9 +112,9 @@ top: 15vw;
 
 
 
-<div id="container" >
 
-  <div id="container2" >
+<div class="container" id="korea">
+  <div class="container2" >
     <img src="images/Busan.jpg" class="box one">
     <img src="images/Busan2.jpeg" class="box one">
     <img src="images/Busan5.jpeg" class="box one">
@@ -123,9 +123,7 @@ top: 15vw;
     <img src="images/Jeju.jpeg" class="box one">
     <img src="images/Jeju2.jpeg" class="box one">
   </div>
-
-
-  <div id="container3">
+  <div class="container3">
     <img src="images/Jeju3.jpeg" class="box one">
     <img src="images/Jeju4.jpeg" class="box one">
     <img src="images/Jeju5.jpeg" class="box one">
@@ -133,29 +131,80 @@ top: 15vw;
     <img src="images/Busan.jpg" class="box one">
     <img src="images/Busan.jpg" class="box one">
     <img src="images/Busan.jpg" class="box one">
-
   </div>
+</div>
 
+<div class="container" id="taiwan">
+  <div class="container2" >
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/Busan9.jpeg" class="box one">
+    <img src="images/Jeju.jpeg" class="box one">
+    <img src="images/Jeju2.jpeg" class="box one">
+  </div>
+  <div class="container3">
+    <img src="images/Jeju3.jpeg" class="box one">
+    <img src="images/Jeju4.jpeg" class="box one">
+    <img src="images/Jeju5.jpeg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+  </div>
+</div>
+
+
+<div class="container" id="dubai">
+  <div class="container2" >
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/hovering.gif" class="box one">
+    <img src="images/Busan9.jpeg" class="box one">
+    <img src="images/Jeju.jpeg" class="box one">
+    <img src="images/Jeju2.jpeg" class="box one">
+  </div>
+  <div class="container3">
+    <img src="images/Jeju3.jpeg" class="box one">
+    <img src="images/Jeju4.jpeg" class="box one">
+    <img src="images/Jeju5.jpeg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+    <img src="images/Busan.jpg" class="box one">
+  </div>
 </div>
 
 
 
 
-
 <script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+$( "#kkorea" ).click(function() {
+  $( "#korea" ).toggle( "slow" );
+  $( "#taiwan" ).hide( "slow" );
+  $( "#dubai" ).hide( "slow" );
+});
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Appreciate the Ocean";
-  }
-}
+$( "#ttaiwan" ).click(function() {
+  $( "#taiwan" ).toggle( "slow" );
+  $( "#korea" ).hide( "slow" );
+  $( "#dubai" ).hide( "slow" );
+});
+
+$( "#ddubai" ).click(function() {
+  $( "#dubai" ).toggle( "slow" );
+  $( "#taiwan" ).hide( "slow" );
+  $( "#korea" ).hide( "slow" );
+});
+
+
+
+
+
 </script>
+
 
 </body>
 

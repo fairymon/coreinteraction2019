@@ -10,7 +10,7 @@ overflow-y:hidden;
 
 a:visited{
   color:tomato;
-  
+
 }
 
 #country{
@@ -36,11 +36,18 @@ a:visited{
 
   cursor: pointer;
 
-  background-image: url('hovering.gif');
+  background-image: url ('hovering.gif');
+  background-size: contain;
   opacity: 0;
 
 
 
+
+
+}
+
+img{
+  object-fit: cover;
 }
 
 #main{
@@ -218,10 +225,10 @@ body {
 	}
 }
 
-#container::-webkit-scrollbar { width: 0 !important }
+.container::-webkit-scrollbar { width: 0 !important }
 
 
-#container {
+.container {
   overflow-y:scroll;
   overflow-x:hidden;
 
@@ -238,7 +245,7 @@ body {
   z-index: 50;
 }
 
-#container2 {
+.container2 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   white-space:nowrap;
@@ -252,7 +259,7 @@ justify-content:center;
 
 }
 
-#container3 {
+.container3 {
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   white-space:nowrap;
