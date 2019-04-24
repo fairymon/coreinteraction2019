@@ -12,7 +12,6 @@ function randomStuff(){
   var clone = randomShape.clone().appendTo('body');
 
 
-
   clone.last().css('left', Math.random() * width)
   clone.last().css('top', Math.random() *  height)
 
@@ -21,7 +20,7 @@ randomStuff();
 
 setInterval(function(){
   randomStuff()
-}, 100)
+}, 200)
 
 
 })
