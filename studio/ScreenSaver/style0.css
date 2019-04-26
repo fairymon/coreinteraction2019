@@ -15,13 +15,13 @@ left: 200px;
 margin: 0;
 padding: 0;
 transform: rotate(-90deg);
-animation: swim 15s infinite;
+animation: swim 16s infinite;
 
 transform-origin: center;
 }
 
 @keyframes swim {
-  0%   {top:-200px; transform: rotate(-80deg);}
+  0%   {top:-100px; transform: rotate(-80deg);}
   10%   {transform: rotate(-100deg);}
   20%   {transform: rotate(-80deg);}
   30%   {transform: rotate(-100deg);}
@@ -31,51 +31,24 @@ transform-origin: center;
   70%   {transform: rotate(-100deg);}
   80%   { transform: rotate(-80deg);}
   90%   { transform: rotate(-100deg);}
-  100% {top:900px;  transform: rotate(-80deg);}
+  100% {top:800px;  transform: rotate(-80deg);}
 }
 
-.pacman{
-  width: 0px;
-  height: 0px;
-  border-right: 40px solid transparent;
-  border-top: 40px solid #35b57c;
-  border-left: 36px solid #35b57c;
-  border-bottom: 40px solid #35b57c;
-  border-top-left-radius: 170px;
-  border-top-right-radius: 160px;
-  border-bottom-left-radius: 160px;
-  border-bottom-right-radius: 160px;
-  z-index: 120;
-  position: fixed;
+#pacman {
+   width: 0px;
+   height: 0px;
+   border-right: 4px solid transparent;
+   border-top: 40px solid green;
+   border-left: 37px solid green;
+   border-bottom: 40px solid green;
+   border-top-left-radius: 170px;
+   border-top-right-radius: 160px;
+   border-bottom-left-radius: 150px;
+   border-bottom-right-radius: 150px;
 
-
-}
-#pacman1 {
-
-   top: 7vw;
-   left: 7vw;
-   animation: lily1 50s infinite;
+   z-index: 100;
+   position: absolute;
  }
-
- #pacman2 {
-   top: 80vh;
-   left: 70vw;
-  animation: lily2 50s infinite;
-  transform: rotate(-90deg);
-  }
-
- @keyframes lily1 {
-   0%   {transform: rotate(0deg);}
-
-   100% {  transform: rotate(360deg);}
- }
-
- @keyframes lily2 {
-   0%   {transform: rotate(0deg);}
-
-   100% {  transform: rotate(-360deg);}
- }
-
 
 
 #body{
@@ -85,13 +58,25 @@ width: 35%;
 height: 65%;
 left: 0;
 transform: rotate(90deg);
-background-color: #f1624e;
+background-color: red;
 border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 z-index: 2;
-transition: 1s;
+animation: body 10s infinite;
 }
 
+@keyframes body {
+0%{
+  background-color: red;
+}
 
+50%{
+  background-color: pink;
+}
+
+0%{
+  background-color: red;
+}
+}
 
 #side{
 position: absolute;
@@ -209,7 +194,7 @@ left: -30%;
   left: 0;
   top: 10%;
   transform: rotate(75deg);
-  background-color: #573717;
+  background-color: black;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   z-index: 4;
 }
@@ -222,7 +207,7 @@ left: -30%;
   left: 0;
   bottom: 15%;
   transform: rotate(105deg);
-  background-color: #573717;
+  background-color: black;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   z-index: 4;
 }
