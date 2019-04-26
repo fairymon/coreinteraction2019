@@ -21,7 +21,7 @@ transform-origin: center;
 }
 
 @keyframes swim {
-  0%   {top:-200px; transform: rotate(-80deg);}
+  0%   {top:-30vh; transform: rotate(-80deg);}
   10%   {transform: rotate(-100deg);}
   20%   {transform: rotate(-80deg);}
   30%   {transform: rotate(-100deg);}
@@ -31,7 +31,7 @@ transform-origin: center;
   70%   {transform: rotate(-100deg);}
   80%   { transform: rotate(-80deg);}
   90%   { transform: rotate(-100deg);}
-  100% {top:900px;  transform: rotate(-80deg);}
+  100% {top:130vh;  transform: rotate(-80deg);}
 }
 
 .pacman{
