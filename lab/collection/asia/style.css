@@ -1,0 +1,287 @@
+html{
+overflow-y:hidden;
+}
+
+*{
+  box-sizing: border-box;
+
+
+}
+
+a:visited{
+  color:navy;
+
+}
+
+#country{
+  width: 20vw;
+}
+
+.box.one{
+  transition: 1s;
+  filter: grayscale(100);
+}
+
+
+
+
+.box.one:hover{
+
+  width: 40vw;
+  height: 30vw;
+
+
+  cursor: pointer;
+  transform: skewX(0deg);
+}
+
+
+
+body{
+  background-image: url(sand/sand6.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+img{
+  object-fit: cover;
+}
+
+#main{
+  width: 100vw;
+  height: 15vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: relative;
+overflow-x:visible;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 20%;
+  text-align: left;
+  margin: 0 auto;
+  top: 0vw;
+  left: 5vw;
+  z-index: 50;
+}
+
+.content h1{
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  z-index: 10;
+  color: white;
+  font-size: 6vw;
+
+}
+
+
+
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: 0em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+    letter-spacing: 0.5em;
+  }
+}
+
+
+.content p{
+  font-size: 1vw;
+  margin-top:0;
+  color: #0080FF;
+}
+
+/* Style the button used to pause/play the video */
+
+
+#navigation{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 40vw;
+  height: 15vh;
+  position: fixed;
+  color: white;
+  right: 5vw;
+  margin-top: 2vw;
+}
+
+.continent{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+
+}
+
+.continent-list{
+  display: none;
+  font-size: 1vw;
+  line-height: 1vw;
+}
+
+.link{
+
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  color: #0080FF;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
+  left: 5vw;
+  font-size: 1vw;
+
+
+}
+
+footer p{
+  margin-right: 5vw;
+}
+
+footer a{
+    color: #0080FF;
+}
+
+
+#continent-asia, #continent-america, #continent-europe, #continent-home, #continent-ocean{
+transition: 0.8s;
+  margin-bottom: 0.8vw;
+}
+
+/////
+
+body {
+  margin:0;
+  font-family:Georgia;
+}
+.box {
+  width:300px;
+  height:200px;
+  display:block;
+  position:relative;
+  animation: moveUp 3s infinite;
+  visibility: visible;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-play-state: running;
+  margin:2vw;
+
+}
+
+
+
+
+@-webkit-keyframes moveUp {
+	0% {
+		opacity: 1;
+		transform: translateY(0px);
+    transform: skewX(-5deg);
+	}
+
+  100% {
+		opacity: 1;
+		transform: translateY(80px);
+	}
+}
+
+.container::-webkit-scrollbar { width: 0 !important }
+
+
+.container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+  padding-top: 20vw;
+  padding-right: 10vw;
+  margin-right: 5vw;
+
+  top: 12vw;
+  z-index: 50;
+}
+
+.container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+  display: inline-flex;
+  margin: -20vw;
+  padding-left: 20vw;
+  margin-right: 0;
+justify-content:center;
+
+
+}
+
+.container3 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+  display: inline-flex;
+  margin:-47vw;
+  padding-left: 20vw;
+  margin-left: 0;
+}
+
+.link{
+  line-height: 1vw;
+  text-decoration:none;
+  color: white;
+}
+
+.link:hover{
+  color: white;
+  text-decoration:none;
+}
+
+.continent a{
+  line-height: 0vw;
+  text-decoration:none;
+  color: white;
+}
+
+
+.continent a:hover{
+  line-height: 0vw;
+  text-decoration: underline wavy #1034A6;
+  color: white;
+}

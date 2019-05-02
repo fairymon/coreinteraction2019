@@ -11,18 +11,22 @@
 </head>
 
 <style>
-
+.box{
+  background-color: blue;
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+}
 
 .pop{
-  display: flex;
   flex-direction: row;
   width: 800px;
   height: 500px;
   text-align: center;
   top: 150px;
   left: 300px;
-  position: relative;
-
+  position: absolute;
+  display: none;
 }
 
 .left{
@@ -43,7 +47,7 @@ img{
     height: 500px;
   margin: 0;
   padding: 0;
-  
+
 }
 
 .imagefor{
@@ -62,12 +66,13 @@ img{
   <div class="pop">
     <img src="images/Busan.jpg" class="left">
     <div class="right">
-      <p class="imagefor">Location : Seoul</p>
+
     </div>
 
   </div>
 
-
+  <div class="box">
+    </div>
 
 
 <script>
