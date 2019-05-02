@@ -1,4 +1,6 @@
 html{
+  width: 100vw;
+  height: 100vh;
 
 }
 
@@ -8,17 +10,24 @@ html{
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  margin: 0;
+  padding: 0;
+  
 }
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: absolute;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  margin: 0;
+  padding:0;
+overflow-x:hidden
 }
 
 /* Add some content at the bottom of the video/page */
@@ -43,6 +52,7 @@ html{
 .content p{
   font-size: 1.2vw;
   margin-top:0;
+  color: #1034A6;
 }
 
 /* Style the button used to pause/play the video */
@@ -60,6 +70,8 @@ html{
     right: 10vw;
     bottom: 10vw;
     position: absolute;
+    transition: 2s;
+    opacity: 0;
 
 }
 
@@ -69,21 +81,16 @@ html{
   mix-blend-mode: overlay;
 }
 
-.link{
-  line-height: 1.8vw;
-}
 
-.link:hover{
-  color: #1034A6;
-  text-decoration: underline wavy #1034A6;
-}
 
 #navigation{
   display: flex;
+opacity: 0;
+transition: 2s;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 40vw;
+  width: 50vw;
   position: fixed;
   color: #0080FF;
   right: 5vw;
@@ -94,19 +101,15 @@ html{
   width: 10vw;
   display: flex;
   flex-direction: column;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 
 }
 
 .continent-list{
   display: none;
   font-size: 1vw;
-  line-height: 1vw;
 }
 
-.link{
-
-}
 
 footer{
   position: absolute;
@@ -130,7 +133,31 @@ footer a{
 }
 
 
-#continent-asia, #continent-america, #continent-europe{
+#continent-asia, #continent-america, #continent-europe, #continent-home, #continent-ocean{
 transition: 0.8s;
   margin-bottom: 0.8vw;
+}
+
+.link{
+  line-height: 1vw;
+  text-decoration:none;
+  color: #1034A6;
+}
+
+.link:hover{
+  color: #1034A6;
+  text-decoration:none;
+}
+
+.continent a{
+  line-height: 0vw;
+  text-decoration:none;
+  color: #1034A6;
+}
+
+
+.continent a:hover{
+  line-height: 0vw;
+  text-decoration: underline wavy #1034A6;
+  color: #1034A6;
 }
