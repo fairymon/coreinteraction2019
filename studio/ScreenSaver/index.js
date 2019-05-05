@@ -70,7 +70,8 @@ $('.side-right', '.fish').last().css('background-color', randomFinColor);
   //$(".fish").first().remove()
 
 
-},4500)
+},1000)
+
 
 
 setInterval(function(){
