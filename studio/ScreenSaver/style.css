@@ -21,7 +21,7 @@ transform-origin: center;
 }
 
 @keyframes swim {
-  0%   {top:-30vh; transform: rotate(-80deg);}
+  0%   {top:-38vh; transform: rotate(-80deg);}
   10%   {transform: rotate(-100deg);}
   20%   {transform: rotate(-80deg);}
   30%   {transform: rotate(-100deg);}
@@ -34,7 +34,7 @@ transform-origin: center;
   100% {top:130vh;  transform: rotate(-80deg);}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
 
   #lily1 {
 
@@ -114,6 +114,12 @@ transform-origin: center;
 
 
     }
+}
+
+@media (min-width: 800px) {
+.fish #body .side-left .side-right #back .eye1 .eye2{
+  transform: scale(2);
+}
 
 
 }

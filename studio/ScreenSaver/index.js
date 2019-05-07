@@ -72,7 +72,11 @@ $('.side-right', '.fish').last().css('background-color', randomFinColor);
 
 },1000)
 
-
+$('body').ripples({
+  resolution: 700,
+  dropRadius: 25,
+  perturbance: 0.5,
+});
 
 setInterval(function(){
   var fishPosition = $(".fish").first().css('top');
