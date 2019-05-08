@@ -104,9 +104,9 @@ $('.one').on('mouseenter', () => {
 
 
 $('body').ripples({
-  resolution: 700,
-  	dropRadius: 25,
-  	perturbance: 0.5,
+  resolution: 500,
+  	dropRadius: 15,
+  	perturbance: 0.3,
 });
 
 
