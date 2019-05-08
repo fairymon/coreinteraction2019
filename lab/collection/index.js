@@ -3,10 +3,7 @@ $(document).ready(() => {
   //$('#navigation').on('click', () => {
   //  $('.login-form').show();
   //});
-  $('#main').on('click', () => {
-    $('#navigation').css('opacity', '1');
-    $('#myBtn').css('opacity', '1');
-    });
+
 
     //mouse enter Home//
       $('#continent-home').on('mouseenter', () => {
