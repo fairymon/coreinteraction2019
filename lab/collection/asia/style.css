@@ -27,10 +27,11 @@ a:visited{
 
 .box.one:hover{
 
-  width: 40vw;
-  height: 30vw;
+  width: 30vw;
+  height: 20vw;
+  z-index: 100;
 
-
+animation-play-state: paused;
   cursor: pointer;
   transform: skewX(0deg);
 }
@@ -44,6 +45,12 @@ body{
   background-size: cover;
   width: 100vw;
   height: 100vh;
+  position: fixed;
+
+
+
+    opacity: 1;
+    background-size: cover;
 }
 img{
   object-fit: cover;
@@ -179,6 +186,17 @@ footer a{
 transition: 0.8s;
   margin-bottom: 0.8vw;
 }
+/* addedfor */
+#continent-asia{
+letter-spacing: 0.6em;
+  text-decoration: underline wavy navy;
+  color: white;
+}
+
+
+
+
+
 
 /////
 
@@ -233,7 +251,7 @@ body {
   padding-right: 10vw;
   margin-right: 5vw;
 
-  top: 12vw;
+  top: 5vw;
   z-index: 50;
 }
 
@@ -243,7 +261,7 @@ body {
   white-space:nowrap;
   font-size:0;
   display: inline-flex;
-  margin: -20vw;
+  margin: -15vw;
   padding-left: 20vw;
   margin-right: 0;
 justify-content:center;
@@ -284,4 +302,5 @@ justify-content:center;
   line-height: 0vw;
   text-decoration: underline wavy #1034A6;
   color: white;
+
 }

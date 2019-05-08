@@ -15,17 +15,7 @@ $(document).ready(() => {
   });
 
 
-//mouse enter Asia//
-  $('#continent-asia, #asia-list').on('mouseenter', () => {
-    $('#asia-list').fadeIn(1000);
-    $('#continent-asia').css('letter-spacing', '0.6em');
-  });
 
-//mouse leave Asia//
-$('#continent-asia, #asia-list').on('mouseleave', () => {
-  $('#asia-list').fadeOut(700);
-  $('#continent-asia').css('letter-spacing', 'initial');
-});
 
 
 //mouse enter America//
@@ -81,6 +71,28 @@ $('#country').on('mouseleave', () => {
 });
 
 
+//click #inform//
+  $('#kkorea').on('click', () => {
+    $('#kkorea').css('color', 'navy');
+    $('#ttaiwan').css('color', 'white');
+    $('#ddubai').css('color', 'white');
+  });
+
+  $('#ttaiwan').on('click', () => {
+    $('#kkorea').css('color', 'white');
+    $('#ttaiwan').css('color', 'navy');
+    $('#ddubai').css('color', 'white');
+  });
+
+
+  $('#ddubai').on('click', () => {
+      $('#kkorea').css('color', 'white');
+      $('#ttaiwan').css('color', 'white');
+      $('#ddubai').css('color', 'navy');
+    });
+
+
+
 $('.one').on('mouseenter', () => {
   $('.one').css('filter', 'grayscale(0)');
 
@@ -91,6 +103,11 @@ $('.one').on('mouseenter', () => {
 });
 
 
+$('body').ripples({
+  resolution: 700,
+  	dropRadius: 25,
+  	perturbance: 0.5,
+});
 
 
 
